@@ -1,6 +1,5 @@
 package com.timitaiwo.javaFSproject.Controllers;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +20,7 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
 
-    @GetMapping()
+    @GetMapping("")
     public ResponseEntity<List<Movie>> getAllMovies() {
         return new ResponseEntity<List<Movie>>(movieService.allMovies(), HttpStatus.OK);
     }
