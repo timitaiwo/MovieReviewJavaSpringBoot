@@ -1,0 +1,18 @@
+meta {
+  name: AddReview
+  type: http
+  seq: 2
+}
+
+post {
+  url: 127.0.0.1:8080/api/v1/reviews
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "reviewBody" : "I really enjoyed the movie and would like to watch it again",
+    "imdbId" : "tt3915174"
+  }
+}
