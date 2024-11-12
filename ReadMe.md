@@ -1,14 +1,13 @@
+A Java SpringBoot REST API to track metadata on released movies and customer sentiment (i.e. reviews).
+It utilzed MongoDB Atlas (for the database) and used the Bruno REST API client for testing.
+
+Things to note:
+
 Project defaults to localhost:8080 or 127.0.0.1:8080
 
-Remember to check if .env file in src/main/resources/
+Remember to check if .env file in src/main/resources/ is populated
 
-
-On Linux
+In Linux/Unix shell use. Use the equivalent for Windows
 
 ```chmod +x mvnw```
-
-./mvnw compile
-./mvnw test
-./mvnw package
-
-Lookup how to package and deploy the backend application
+./mvnw sprint-boot:run
